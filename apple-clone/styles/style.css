@@ -1,0 +1,137 @@
+:root {
+    --bg-primary: #000000;
+    --text-primary: #ffffff;
+    --dark-text: #1d1d1f;
+    --text-link: #2997ff;
+}
+
+body {
+    font-family: Roboto;
+}
+
+.navbar__list {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px;
+    font-size: 13px;
+}
+
+.hero__section {
+    background-image: url('/assets/images/hero_iphone15pro.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    color: var(--text-primary);
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+
+    span {
+        font-size: 54px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 24px;
+        padding: 5px 0 15px;
+    }
+}
+
+.iphone__section {
+    background-image: url('/assets/images/hero_iphone15_announce.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    color: var(--dark-text);
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+
+    span {
+        font-size: 54px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 24px;
+        padding: 5px 0 15px;
+    }
+}
+
+.appleWatch__section {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+
+.appleWatch__section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.appleWatch__content {
+    position: relative;
+    z-index: 1;
+
+    color: var(--text-primary);
+    text-align: center;
+    padding: 380px;
+}
+
+.appleWatch__info p:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.appleWatch__info p:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.appleWatch__info p:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 24px;
+    padding: 10px 0 15px 0;
+}
+
+.appleWatch__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.appleWatch__buttons button {
+    background-color: var(--text-primary);
+    color: var(--dark-text);
+    border: none;
+    border-radius: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 22px;
+}
